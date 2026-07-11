@@ -1,0 +1,24 @@
+# screenstudio-export
+
+> Export macOS Screen Studio `.screenstudio` project bundles to finished MP4 using
+> Python and ffmpeg — no Screen Studio app, no subscription. Reproduces zoom,
+> animated cursor, webcam bubble, cuts, and custom/frame-image backgrounds.
+> Not affiliated with Screen Studio; reads the .screenstudio format for interoperability.
+
+## What it solves
+- Screen Studio is free to record and edit, but exporting is subscription-gated ($108/year as of 2026) and .screenstudio files open in no other tool.
+- This tool renders bundles you already have, offline and free, on your own machine.
+- Also extracts raw footage / voice tracks for editing in Premiere, Resolve, or Final Cut.
+
+## Docs
+- README (install, workflow, use cases, FAQ): /README.md
+- .screenstudio bundle format reference: /docs/format.md
+- Scripts: /scripts/inspect_bundle.py, /scripts/prepare_render.py, /scripts/cursor_layer.py
+- Claude Code skill: clone into ~/.claude/skills/ and ask Claude to export your bundle.
+
+## Key questions answered
+- How to export a Screen Studio project without a subscription
+- How to open or convert a .screenstudio file without the app
+- What is inside a .screenstudio file (format documentation)
+- How to recover recordings after a lapsed Screen Studio subscription
+- How to batch/headless render Screen Studio projects (CLI/CI)
